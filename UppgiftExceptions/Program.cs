@@ -50,10 +50,12 @@ class Program
             Console.WriteLine("Volymen blir: " + (Math.Pow(sida, 3)));
             //Möjliga fel att hantera
             //Användaren försöker mata in negativa värden. 
+            
         }
-        catch (MyOwnException)
+
+        catch (MyOwnException ex)
         {
-    
+            Console.Writeline("Sidan får inte vara negativ");
         }
 
         /*------------------------------------------------------------------------------------------*/
